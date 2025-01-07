@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules\jquery-ui\dist\themes\base\jquery-ui.min.css"
+    />
+    <style>
+      #carre {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        transition: opacity 0.5s ease;
+      }
+    </style>
+      <style>
+        #red, #green, #blue {
+          float: left;
+          clear: left;
+          width: 300px;
+          margin: 15px;
+        }
+        #swatch {
+          width: 120px;
+          height: 100px;
+          margin-top: 18px;
+          margin-left: 350px;
+          background-image: none;
+        }
+        #red .ui-slider-range { background: #ef2929; }
+        #red .ui-slider-handle { border-color: #ef2929; }
+        #green .ui-slider-range { background: #8ae234; }
+        #green .ui-slider-handle { border-color: #8ae234; }
+        #blue .ui-slider-range { background: #729fcf; }
+        #blue .ui-slider-handle { border-color: #729fcf; }
+        </style>
+    <script
+      defer
+      type="text/javascript"
+      src="node_modules\jquery\dist\jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      defer
+      src="node_modules\jquery-ui\dist\jquery-ui.min.js"
+    ></script>
+    <script src="js/app.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="javascript-list">
+      <li>test1</li>
+      <li>test2</li>
+      <li>test3</li>
+      <li>test4</li>
+    </ul>
+
+    <ul id="jquery">
+      <li>test5</li>
+      <li>test6</li>
+      <li>test7</li>
+      <li>test8</li>
+    </ul>
+
+    <button id="btn-js">Clique ici JS !</button>
+    <button id="btn-jq">Clique ici JQ !</button>
+    <div id="carre"></div>
+    <br /><br /><br />
+    <div class="ui-widget"></div>
+    <label for="tags">Tags: </label>
+    <input id="tags" />
+</div>
+
+<p class="ui-state-default ui-corner-all ui-helper-clearfix" style="padding:4px;">
+    <span class="ui-icon ui-icon-pencil" style="float:left; margin:-2px 5px 0 0;"></span>
+    Simple Colorpicker
+  </p>
+   
+  <div id="red"></div>
+  <div id="green"></div>
+  <div id="blue"></div>
+   
+  <div id="swatch" class="ui-widget-content ui-corner-all"></div>
+
+  <div>
+    <div id="progressbar"></div>
+</div>
+  </body>
+</html>
